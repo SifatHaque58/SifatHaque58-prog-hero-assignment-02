@@ -32,6 +32,14 @@ body{
     padding-left: 10px;
 }
 
+/* horizontal line */
+
+.hori-line{
+    border: 0;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
+}
+
 /* Heading title */
 .top-heading-ls{
     font-size: 24px;
@@ -112,6 +120,50 @@ nav{
     left:10px;          
 }
 
+/* brand logos */
+.brand-logos{
+    margin-top: 69px;
+    margin-bottom: 100px;
+}
+
+.brand-logos-container{
+    display: flex;
+    height: 110px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alibaba-logo{
+    width: 55px;
+    height: 31px;
+}
+.amazon-logo{
+    width: 84px;
+    height: 26px;
+}
+.daraz-logo{
+    width: 84px;
+    height: 26px;
+}
+.ebay-logo{
+    width: 99px;
+    height: 40px;
+
+}
+.rakuten-logo{
+    width: 97px;
+    height: 28px;
+}
+.walmart-logo{
+    width: 111px;
+    height: 26px;
+
+}
+.target-logo{
+    width: 91px;
+    height: 38px;
+
+}
 
 
 
