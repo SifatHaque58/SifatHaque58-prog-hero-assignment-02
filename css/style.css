@@ -111,6 +111,14 @@ body{
 }
 
 /* navigation */
+
+#nav-toggler{
+    display: none;
+}
+.nav-toggler-icon{
+    display: none;
+}
+
 nav{
     display: flex;
     height: 80px;
@@ -355,6 +363,361 @@ footer p{
 }
 
 
+/* responsive css */
+
+@media only screen and (max-width: 767px){
+    .container{
+        max-width: 767px;
+        margin: 0 auto;
+        padding: 0px 30px;
+    }
+
+    .top-banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .top-heading-ls{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .top-banner-ls h2{
+        font-weight: 700;
+        font-size: 28px;
+    }
+    .top-banner-ls p{
+        font-weight: 600;
+        font-size: 14px;
+        padding: 20px 22px;
+    }
+    
+    .top-banner-rs-imgs{
+        position: relative;
+        top: 0;
+        left: 0;
+    } 
+    .cam-bg-design{
+        width: 257px;
+        height: 257px;
+        position: relative;
+        top: -25px;
+        left: -25px;
+    } 
+    .main-camera{
+        width: 202px;
+        height: 190px;
+        position: absolute;
+        top: 0px;
+        left: 0px;         
+    }
+    .nav-toggler-icon{
+        display: block;
+        padding-left: 150px;
+    }
+    .navigation{
+        position: absolute;
+        top: 30px;
+        left: 0px;
+        width: 100%;
+        flex-direction: column-reverse;
+        flex-wrap:wrap;
+        align-items: flex-end;
+        transform: translateY(-320px);
+        transition: .5 ease-in-out;
+       
+
+    }
+    #nav-toggler:checked ~ .navigation{
+        transform: translateY(0px);
+
+    }
+    .brand-logos-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .popular-collection, 
+    .popular-collection-heading, 
+    .contact-form, 
+    .contact-title,
+    .top-banner-ls,
+    .top-banner-rs
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .see-more-btn{
+        padding-top: 30px;
+        padding-left: 250px;
+        padding-bottom: 50px;
+    }
+    .contact-ls,
+    .contact-rs
+    {
+        width: 50%;
+        padding-bottom: 10px;
+    }
+    .brand-logos-container{
+        width: 50%;
+        padding-left: -150px;
+        margin-left: 150px;
+    }
+      
+    .alibaba-logo{
+        width: 36px;
+        height: 15px;
+    }
+    .amazon-logo{
+        width: 42px;
+        height: 14px;
+    }
+    .daraz-logo{
+        width: 42px;
+        height: 14px;
+    }
+    .ebay-logo{
+        width: 49px;
+        height: 20px;
+
+    }
+    .rakuten-logo{
+        width: 43px;
+        height: 14px;
+    }
+    .walmart-logo{
+        width: 55px;
+        height: 14px;
+
+    }
+    .target-logo{
+        width: 45px;
+        height: 22px;
+
+    }
+
+     
+}
+
+@media only screen and (max-width: 375px){
+    .container{
+        max-width: 375px;
+        margin: 0 auto;
+        padding: 0px 30px;
+    }
+    .top-banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .top-heading-ls{
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .top-banner-ls h2{
+        font-weight: 700;
+        font-size: 28px;
+    }
+    .top-banner-ls p{
+        font-weight: 600;
+        font-size: 14px;
+        padding: 20px 22px;
+    }
+    
+    .top-banner-rs-imgs{
+        position: relative;
+        top: 0;
+        left: 0;
+    } 
+    .cam-bg-design{
+        width: 257px;
+        height: 257px;
+        position: relative;
+        top: -15px;
+        left: -80px;
+    } 
+    .main-camera{
+        width: 202px;
+        height: 190px;
+        position: absolute;
+        top: 10px;
+        left: -50px;         
+    }
+    .nav-toggler-icon{
+        display: block;
+        padding-left: 150px;
+    }
+    .navigation{
+        position: absolute;
+        top: 30px;
+        left: 0px;
+        width: 100%;
+        flex-direction: column-reverse;
+        flex-wrap:wrap;
+        align-items: flex-end;
+        transform: translateY(-320px);
+        transition: .5 ease-in-out;
+       
+
+    }
+    #nav-toggler:checked ~ .navigation{
+        transform: translateY(0px);
+
+    }
+    .brand-logos-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .popular-collection, 
+    .popular-collection-heading, 
+    .contact-form, 
+    .contact-title,
+    .top-banner-ls,
+    .top-banner-rs
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .see-more-btn{
+        padding-top: 30px;
+        padding-left: 250px;
+        padding-bottom: 50px;
+    }
+    .contact-ls,
+    .contact-rs
+    {
+        width: 50%;
+        padding-bottom: 10px;
+    }
+    .brand-logos-container{
+        width: 20%;
+        padding-left: -150px;
+        margin-left: 150px;
+    }
+   .alibaba-logo{
+        width: 36px;
+        height: 15px;
+    }
+    .amazon-logo{
+        width: 42px;
+        height: 14px;
+    }
+    .daraz-logo{
+        width: 42px;
+        height: 14px;
+    }
+    .ebay-logo{
+        width: 49px;
+        height: 20px;
+
+    }
+    .rakuten-logo{
+        width: 43px;
+        height: 14px;
+    }
+    .walmart-logo{
+        width: 55px;
+        height: 14px;
+
+    }
+    .target-logo{
+        width: 45px;
+        height: 22px;
+
+    }
+}
+
+ @media only screen and (min-width:768px) and (max-width:1024px){ 
+
+    .container{
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 0px 30px;
+    }
+
+    .top-heading-ls{
+        padding-right: 25px;
+    }
+    .top-banner
+    {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .popular-collection{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        
+
+    } 
+    .contact-form,
+    .top-banner-ls,
+    .top-banner-rs
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .cam-bg-design,
+    .main-camera  {
+        margin-right: 100px;
+    }
+    .contact-ls,
+    .contact-rs
+    {
+        width: 50%;
+        padding-bottom: 10px;
+    }
+    .see-more-btn{
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .brand-logos-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .alibaba-logo{
+        width: 36px;
+        height: 15px;
+    }
+    .amazon-logo{
+        width: 42px;
+        height: 14px;
+    }
+    .daraz-logo{
+        width: 42px;
+        height: 14px;
+    }
+    .ebay-logo{
+        width: 49px;
+        height: 20px;
+
+    }
+    .rakuten-logo{
+        width: 43px;
+        height: 14px;
+    }
+    .walmart-logo{
+        width: 55px;
+        height: 14px;
+
+    }
+    .target-logo{
+        width: 45px;
+        height: 22px;
+
+    }
+    
+}
 
 
 
