@@ -48,6 +48,62 @@ body{
     
 }
 
+/* style in the header */
+
+@keyframes  styling-text{
+
+    0%{
+        content: "Start|";
+    }
+    10%{
+        content: "your|";
+    }
+    20%{
+        content: "Journey|";
+    }
+    30%{
+        content: "as|";
+    }
+    40%{
+        content: "Influencer|";
+    }
+    50%{
+        content: "Start your Journey as Influencer";
+    }
+    60%{
+        content: "Start your Journey as Influencer";
+    }
+    70%{
+        content: "Start your Journey as Influencer";
+    }
+    80%{
+        content: "Start your Journey as Influencer";
+    }
+    90%{
+        content: "Start your Journey as Influencer";
+    }
+    100%{
+        content:"Start your Journey as Influencer";
+    }
+   
+}
+
+.styling-text{
+    position: relative;
+    visibility: hidden;
+}
+
+.styling-text::before{
+    content: "Start your Journey as Influencer";
+    position:absolute;
+    left:0;
+    top:0;
+    animation: styling-text 6s linear infinite;
+    visibility: visible;
+}
+
+
+
 /* Heading title */
 .top-heading-ls{
     font-size: 24px;
@@ -98,8 +154,6 @@ nav{
     padding-bottom: 16px;
     font-weight: 600;
     font-size: 16px;
-
-
 }
 
 /* top banner image */
@@ -125,7 +179,7 @@ nav{
     height: 414px;
     position: absolute;
     top: 10px;
-    left:10px;          
+    left:10px;         
 }
 
 /* brand logos */
@@ -187,8 +241,7 @@ nav{
 .popular-collection{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 30px;
-    grid-column-gap: 30px;
+    gap: 30px;  
 }
 
 /* box shadow for items */
@@ -224,7 +277,82 @@ nav{
     color: #5E6366; 
 }
 
+/* see more button */
+.see-more-btn {
+    display: flex;
+    padding-top: 50px;
+    justify-content: flex-end;   
+}
+.see-more-btn a{
+    text-decoration: none;
+    color: #E02C6DDE;
+    font-size: 16px;
+    font-weight: 700;
+}
 
+/* contact portion */
+.contact-title{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.contact-form{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px
+
+
+}
+
+.contact-ls img{
+    width: 100%;
+}
+.contact-rs form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-field{
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px;
+    font-size:16px;
+    font-family: inherit;
+    outline: 0px;
+    border:1px solid #E02C6D;
+}
+
+
+
+/* footer */
+
+footer{
+
+    display: flex;
+    flex-direction: column;
+    height: 240px;
+    background-color: #0A0826;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h2{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+
+}
+footer p{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.social-medias{
+    font-size: 32px;
+}
 
 
 
