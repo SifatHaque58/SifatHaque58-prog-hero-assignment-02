@@ -416,8 +416,8 @@ footer p{
     }
     .navigation{
         position: absolute;
-        top: 30px;
-        left: 0px;
+        top: 50px;
+        left: 5px;
         width: 100%;
         flex-direction: column-reverse;
         flex-wrap:wrap;
@@ -551,7 +551,7 @@ footer p{
     }
     .navigation{
         position: absolute;
-        top: 30px;
+        top: 20px;
         left: 0px;
         width: 100%;
         flex-direction: column-reverse;
